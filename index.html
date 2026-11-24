@@ -1,62 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080a0f">
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07090e">
 <title>CLOUD314UNIVERSE | Original Stories. Infinite Worlds.</title>
 <style>
-:root{--bg:#080a0f;--panel:#11151e;--silver:#c9d0dc;--muted:#929baa;--line:#29313e;--white:#f5f7fb}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#263449 0,transparent 48%),var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
-header{position:sticky;top:0;background:#080a0fe8;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);z-index:5}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0;gap:20px}.brand{font-weight:900;letter-spacing:2px;font-size:14px}.brand span{color:var(--silver)}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}nav a:hover{color:white}
-.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:80px 0}.orb{width:112px;height:112px;border:1px solid #aeb9c9;border-radius:50%;margin:0 auto 26px;display:grid;place-items:center;box-shadow:0 0 55px #9eafc433,inset 0 0 30px #9eafc422;position:relative}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #8999ad88;border-radius:50%;width:145px;height:48px;transform:rotate(-28deg)}.orb:after{transform:rotate(35deg);width:155px;height:58px}.orb b{font-size:29px;letter-spacing:-2px}.eyebrow{color:var(--silver);letter-spacing:4px;text-transform:uppercase;font-size:11px}.hero h1{font-size:clamp(38px,8vw,76px);line-height:1.03;letter-spacing:-3px;margin:15px 0}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px}.btn{display:inline-block;margin-top:28px;padding:12px 22px;border:1px solid var(--silver);border-radius:3px;font-weight:bold;font-size:13px;letter-spacing:1px}.btn:hover{background:var(--silver);color:#080a0f}
-section{padding:75px 0;border-top:1px solid var(--line)}.section-tag{color:var(--silver);font-size:11px;letter-spacing:3px;text-transform:uppercase}.section-title{font-size:clamp(28px,5vw,44px);margin:8px 0 14px;line-height:1.1}.intro{color:var(--muted);max-width:720px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:28px}.card{background:linear-gradient(145deg,#171d28,#0e121a);border:1px solid var(--line);padding:23px;min-height:180px}.card h3{margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}.bigbang{background:radial-gradient(ellipse at 80% 30%,#34465d55,transparent 55%),#101620;border:1px solid #3a4657;padding:clamp(24px,5vw,48px);margin-top:25px}.bigbang h3{font-size:clamp(30px,6vw,54px);margin:5px 0}.bigbang p{max-width:680px;color:var(--muted)}.founders{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.founders span{border:1px solid var(--line);padding:10px 14px;color:var(--silver)}
-footer{padding:30px 0;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
-#gate{position:fixed;inset:0;z-index:20;background:radial-gradient(ellipse at 50% 20%,#263449,#080a0f 65%);display:grid;place-items:center;padding:20px}
-.gatebox{width:min(420px,100%);text-align:center;border:1px solid #465365;background:#0c111bdc;padding:32px 25px;box-shadow:0 20px 80px #0009}
-.gatebox .orb{width:76px;height:76px;margin-bottom:20px}.gatebox .orb b{font-size:21px}.gatebox h1{font-size:25px;letter-spacing:2px}.gatebox p{color:var(--muted);font-size:13px}
-input{width:100%;padding:14px;background:#080a0f;border:1px solid #465365;color:white;margin-top:12px;outline:none;text-align:center;letter-spacing:2px}button{width:100%;padding:14px;margin-top:12px;background:#d6dce5;color:#080a0f;border:0;font-weight:900;letter-spacing:2px;cursor:pointer}#error{color:#ff9b9b;min-height:22px;font-size:12px}
-@media(max-width:650px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{min-height:68vh}.hero h1{letter-spacing:-2px}}
-</style>
-</head>
-<body>
-<div id="gate">
- <div class="gatebox">
-  <div class="orb"><b>C314</b></div>
-  <div class="eyebrow">Private universe access</div>
-  <h1>CLOUD314UNIVERSE</h1>
-  <p>Enter the access code to explore our worlds.</p>
-  <form id="accessForm"><input id="accessCode" type="password" placeholder="ACCESS CODE" autocomplete="off" aria-label="Access code"><button type="submit">ENTER THE UNIVERSE</button></form>
-  <div id="error" role="status"></div>
- </div>
-</div>
-<header><div class="wrap nav"><a class="brand" href="#home">CLOUD<span>314</span>UNIVERSE</a><nav><a href="#home">HOME</a><a href="#bigbang">BIG BANG</a><a href="#divisions">OUR UNIVERSE</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav></div></header>
+:root{--bg:#07090e;--panel:#111925;--line:#2c394b;--silver:#d5deea;--muted:#a5b0bf}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#31445e66,transparent 48%),var(--bg);color:#f6f8fc;font:16px/1.65 Arial,sans-serif}
+.wrap{width:min(1120px,92%);margin:auto}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:5;background:#07090eef;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 0}.brand{font-weight:900;letter-spacing:2px;font-size:13px}.brand b{border:1px solid #aebdd0;border-radius:50%;padding:9px;margin-right:9px}nav{display:flex;gap:17px;flex-wrap:wrap;font-size:11px;letter-spacing:1px;color:#c1cad6}
+.hero{min-height:650px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:80px 0}.hero:before{content:"";position:absolute;width:600px;height:600px;border:1px solid #aabbd01e;border-radius:50%;box-shadow:0 0 0 50px #aabbd008,0 0 0 100px #aabbd006;z-index:-1}
+.logo{width:95px;height:95px;border:1px solid #d5deea;border-radius:50%;display:grid;place-items:center;margin:auto auto 25px;font-weight:900;font-size:25px;box-shadow:0 0 50px #8da9d044}
+.kicker{font-size:10px;letter-spacing:4px;color:#aebfd3;text-transform:uppercase}
+h1{font-size:clamp(42px,8vw,86px);line-height:1;letter-spacing:-4px;margin:20px 0}h1 span{color:#aebed2}
+.hero p,.copy{color:var(--muted);max-width:700px;margin:0 auto}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:13px 20px;border:1px solid #aebed2;font-size:11px;font-weight:bold;letter-spacing:1px}.btn.primary{background:#dce4ee;color:#080b11}
+section{padding:85px 0;border-top:1px solid var(--line)}.heading{font-size:clamp(30px,5vw,52px);line-height:1.05;letter-spacing:-2px;margin:10px 0 15px}.rowhead{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}
+.feature{padding:clamp(25px,5vw,55px);border:1px solid #53647b;background:linear-gradient(120deg,#172334,#0b1018);display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center;position:relative;overflow:hidden}
+.feature h3{font-size:clamp(42px,7vw,76px);line-height:1;margin:12px 0}.feature p{color:var(--muted);max-width:620px}
+.planet{width:180px;height:180px;border-radius:50%;margin:auto;background:radial-gradient(circle at 30% 25%,#e5eaf0,#8493a7 30%,#354154 65%,#0b111a 80%);box-shadow:inset -25px -20px 40px #05080d,0 0 65px #8ba5c044;position:relative}.planet:after{content:"";position:absolute;width:260px;height:65px;border:2px solid #b9c8d7aa;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-25deg)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:24px;background:linear-gradient(145deg,#151f2d,#0c1119);border:1px solid var(--line);min-height:180px}.card small{color:#9eb4d0;letter-spacing:2px}.card h3{margin:13px 0 6px}.card p{font-size:13px;color:var(--muted);margin:0}
+.manifesto{text-align:center;padding:45px 25px;border:1px solid var(--line);background:#101722}.manifesto blockquote{font-size:clamp(24px,4vw,42px);line-height:1.2;margin:15px auto;max-width:850px}.manifesto p{color:var(--muted);max-width:680px;margin:auto}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:14px}.founder{border:1px solid var(--line);padding:23px;background:#101722}.founder small{display:block;color:#9eb4d0;letter-spacing:1px;text-transform:uppercase}.founder strong{font-size:20px}
+.roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:25px}.phase{border-top:2px solid #8fa7c5;background:#101722;padding:16px}.phase p{font-size:12px;color:var(--muted)}
+footer{padding:35px 0;color:#9aa6b7;font-size:12px;border-top:1px solid var(--line)}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+#gate{position:fixed;inset:0;z-index:20;background:radial-gradient(ellipse at 50% 20%,#293d58,#07090e 68%);display:grid;place-items:center;padding:20px}.gatebox{width:min(420px,100%);text-align:center;border:1px solid #536780;background:#0c121ddd;padding:30px 24px}.gatebox .logo{width:72px;height:72px;font-size:20px}.gatebox p{color:var(--muted);font-size:13px}input{width:100%;padding:14px;background:#07090e;border:1px solid #536780;color:white;text-align:center;letter-spacing:2px;margin-top:12px}button{width:100%;padding:14px;background:#dce4ee;color:#07090e;border:0;font-weight:bold;letter-spacing:2px;margin-top:12px}#error{color:#ffaaaa;font-size:12px;min-height:20px}
+@media(max-width:720px){.nav{align-items:flex-start;flex-direction:column}nav{overflow:auto;white-space:nowrap;width:100%}.feature{grid-template-columns:1fr}.planet{width:145px;height:145px}.grid{grid-template-columns:1fr 1fr}.rowhead{display:block}.roadmap{grid-template-columns:1fr 1fr}h1{letter-spacing:-2px}}
+@media(max-width:430px){.grid,.founders{grid-template-columns:1fr}.hero{min-height:590px}}
+</style></head><body>
+<div id="gate"><div class="gatebox"><div class="logo">C314</div><div class="kicker">Private universe access</div><h2>CLOUD314UNIVERSE</h2><p>Enter the access code to explore our worlds.</p><form id="form"><input id="code" type="password" placeholder="ACCESS CODE" aria-label="Access code"><button>ENTER THE UNIVERSE</button></form><div id="error"></div></div></div>
+<header><div class="wrap nav"><a class="brand" href="#home"><b>C314</b>CLOUD314UNIVERSE</a><nav><a href="#home">HOME</a><a href="#bigbang">BIG BANG</a><a href="#divisions">DIVISIONS</a><a href="#vision">VISION</a><a href="#founders">FOUNDERS</a><a href="#contact">CONTACT</a></nav></div></header>
 <main id="site" hidden>
-<section class="hero" id="home"><div class="wrap"><div class="orb"><b>C314</b></div><div class="eyebrow">A creative entertainment universe</div><h1>ORIGINAL STORIES.<br><span style="color:#b8c4d4">INFINITE WORLDS.</span></h1><p>Born from imagination in Zambia. Built to create original worlds, unforgettable characters and stories with the potential to reach audiences everywhere.</p><a class="btn" href="#bigbang">EXPLORE OUR FIRST UNIVERSE</a></div></section>
-<section id="bigbang"><div class="wrap"><div class="section-tag">Flagship original intellectual property</div><h2 class="section-title">THE BIG BANG UNIVERSE</h2><p class="intro">A story world created to grow beyond the page. Discover the beginning of a franchise vision spanning storytelling and future adaptations.</p><div class="bigbang"><div class="eyebrow">First flagship story</div><h3>BIG BANG</h3><p>A universe of planets, conflict, mystery and extraordinary power. Follow the journey from the fall of Planet Nymo and the twins whose destinies lead to different worlds.</p><p><strong>Original creators:</strong> Cletus Malambo &amp; Jeremiah Chungu</p></div></div></section>
-<section id="divisions"><div class="wrap"><div class="section-tag">One company. Many creative worlds.</div><h2 class="section-title">OUR UNIVERSE</h2><p class="intro">Our planned creative divisions are designed to develop original intellectual property and bring it to audiences through multiple formats.</p><div class="grid">
-<div class="card"><h3>01 / Publishing</h3><p>Novels, ebooks, comics, manga and graphic novels.</p></div>
-<div class="card"><h3>02 / Animation</h3><p>Animated shorts, pilots, series and feature projects.</p></div>
-<div class="card"><h3>03 / Interactive</h3><p>Mobile, PC and console games and interactive stories.</p></div>
-<div class="card"><h3>04 / Merchandise</h3><p>Apparel, posters, collectibles and licensed products.</p></div>
-<div class="card"><h3>05 / Studios</h3><p>Film, television, audio, soundtracks and production partnerships.</p></div>
+<section class="hero" id="home"><div class="wrap"><div class="logo">C314</div><div class="kicker">A Zambia-origin creative entertainment company</div><h1>ORIGINAL STORIES.<br><span>INFINITE WORLDS.</span></h1><p>We create original worlds, unforgettable characters and stories built to travel beyond the page — across publishing, animation, games and entertainment.</p><div class="actions"><a class="btn primary" href="#bigbang">EXPLORE OUR UNIVERSE</a><a class="btn" href="#vision">OUR VISION</a></div></div></section>
+<section id="bigbang"><div class="wrap"><div class="rowhead"><div><div class="kicker">01 / Flagship intellectual property</div><h2 class="heading">ONE STORY CAN OPEN<br>INFINITE WORLDS.</h2><p class="copy" style="margin:0">Our first flagship IP is the beginning of a larger creative universe and franchise ambition.</p></div><small>FEATURED IP — 001</small></div><div class="feature"><div><div class="kicker">Original story • Franchise in development</div><h3>BIG BANG</h3><p>A science-fantasy story that begins with the fall of Planet Nymo, the escape of twin princes, and two destinies unfolding across different worlds. The BIG BANG universe is intended to grow through future publishing, animation, screen and interactive adaptations.</p><p><b>Original creators:</b> Cletus Malambo &amp; Jeremiah Chungu</p></div><div class="planet"></div></div></div></section>
+<section id="divisions"><div class="wrap"><div class="kicker">02 / The company ecosystem</div><h2 class="heading">ONE UNIVERSE. MULTIPLE WORLDS.</h2><p class="copy" style="margin:0">Planned creative divisions designed to develop original intellectual property and expand it across formats.</p><div class="grid" style="margin-top:28px">
+<article class="card"><small>DIVISION 01</small><h3>Publishing</h3><p>Novels, ebooks, comics, manga and graphic novels. The home of original stories and story worlds.</p></article>
+<article class="card"><small>DIVISION 02</small><h3>Animation</h3><p>Animated shorts, pilots, series and films that bring original characters and worlds to the screen.</p></article>
+<article class="card"><small>DIVISION 03</small><h3>Interactive</h3><p>Mobile, PC and console games, interactive stories and experiences built around original IP.</p></article>
+<article class="card"><small>DIVISION 04</small><h3>Merchandise</h3><p>Apparel, posters, collectibles and licensed products inspired by our creative universes.</p></article>
+<article class="card"><small>DIVISION 05</small><h3>Studios</h3><p>Film, television, audio, soundtracks and production partnerships for original entertainment.</p></article>
+<article class="card"><small>THE BIG PICTURE</small><h3>Franchise Development</h3><p>Long-term stewardship of intellectual property, audience communities and cross-format opportunities.</p></article>
 </div></div></section>
-<section id="about"><div class="wrap"><div class="section-tag">The vision</div><h2 class="section-title">BUILT TO CREATE WORLDS</h2><p class="intro">CLOUD314UNIVERSE is a Zambia-origin creative entertainment company with a long-term ambition to become a global entertainment group. Our focus is original storytelling, thoughtful world-building and developing intellectual property that can expand across publishing, animation, games and merchandise.</p><div class="founders"><span>Cletus Malambo</span><span>Jeremiah Chungu</span></div></div></section>
-<section id="contact"><div class="wrap"><div class="section-tag">Connect with the universe</div><h2 class="section-title">CONTACT</h2><p class="intro">For collaboration, publishing, creative partnerships or business enquiries, add your official company email and social links here when ready.</p><p style="color:#c9d0dc">Email: [Add official email]</p><p style="color:#c9d0dc">Social: [Add official social links]</p></div></section>
-<footer><div class="wrap">© <span id="year"></span> CLOUD314UNIVERSE. ORIGINAL STORIES. INFINITE WORLDS. <span style="display:block;margin-top:7px">A developing creative entertainment company and franchise vision.</span></div></footer>
+<section id="vision"><div class="wrap"><div class="kicker">03 / Our philosophy</div><h2 class="heading">BUILT FROM IMAGINATION.<br>DESIGNED FOR GENERATIONS.</h2><div class="manifesto"><div class="kicker">Our ambition</div><blockquote>“We don't just want to tell stories. We want to build worlds people can enter, explore and remember.”</blockquote><p>Developed in Zambia with a global outlook: start with original stories, build strong creative foundations, earn an audience, and expand thoughtfully into new forms of entertainment.</p></div><div class="roadmap"><div class="phase"><b>01 / CREATE</b><p>Develop original stories, characters, worlds and creative bibles.</p></div><div class="phase"><b>02 / PUBLISH</b><p>Release work, build an audience and establish flagship IP.</p></div><div class="phase"><b>03 / ADAPT</b><p>Develop proof-of-concept animation, screen and interactive experiences.</p></div><div class="phase"><b>04 / EXPAND</b><p>Grow partnerships, licensing, merchandise and international reach.</p></div></div></div></section>
+<section id="founders"><div class="wrap"><div class="kicker">04 / The creators</div><h2 class="heading">TWO CREATORS. ONE UNIVERSE.</h2><p class="copy" style="margin:0 0 25px">Shared creative ambition and the belief that original worlds can begin anywhere.</p><div class="founders"><div class="founder"><small>Co-founder / Original creator</small><strong>Cletus Malambo</strong></div><div class="founder"><small>Co-founder / Original creator</small><strong>Jeremiah Chungu</strong></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="kicker">05 / Connect</div><h2 class="heading">LET'S BUILD WHAT'S NEXT.</h2><p class="copy" style="margin:0">For creative collaborations, publishing, production and business enquiries, official contact channels will be added here when confirmed by the founders.</p><div class="feature" style="display:block;margin-top:25px"><b>Official email:</b> [Add company email]<br><b>Social channels:</b> [Add official links]</div></div></section>
+<footer><div class="wrap foot"><div><b>CLOUD314UNIVERSE</b><br>ORIGINAL STORIES. INFINITE WORLDS.</div><div>Born in Zambia. Imagining beyond borders.<br>© <span id="year"></span> CLOUD314UNIVERSE. All rights reserved.</div></div></footer>
 </main>
 <script>
-/* BASIC DEMO GATE ONLY. A password embedded in front-end code is not secure. */
-const ACCESS_CODE = "cloud314universe";
-const gate=document.getElementById("gate"),site=document.getElementById("site");
-document.getElementById("accessForm").addEventListener("submit",function(e){
- e.preventDefault();
- if(document.getElementById("accessCode").value===ACCESS_CODE){gate.style.display="none";site.hidden=false;sessionStorage.setItem("c314_access","yes");}
- else{document.getElementById("error").textContent="Incorrect code. Try again."; }
-});
-if(sessionStorage.getItem("c314_access")==="yes"){gate.style.display="none";site.hidden=false;}
+/* Demo gate only: this client-side code is visible and is not secure authentication. */
+const ACCESS_CODE="cloud314universe",gate=document.getElementById("gate"),site=document.getElementById("site");
+document.getElementById("form").addEventListener("submit",e=>{e.preventDefault();if(document.getElementById("code").value===ACCESS_CODE){gate.style.display="none";site.hidden=false;sessionStorage.setItem("c314_access","yes")}else document.getElementById("error").textContent="Incorrect code. Try again."});
+if(sessionStorage.getItem("c314_access")==="yes"){gate.style.display="none";site.hidden=false}
 document.getElementById("year").textContent=new Date().getFullYear();
-</script>
-</body></html>
+</script></body></html>
